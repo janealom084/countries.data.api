@@ -1,0 +1,10 @@
+.country{
+    background-color: purple;
+    color: white;
+    border: 2px solid red;
+    border-radius: 20px;
+    padding: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
