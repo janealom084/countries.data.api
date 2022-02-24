@@ -11,13 +11,11 @@ const displyCountries = countries => {
         // console.log(country)
         const div = document.createElement('div');
         div.classList.add('country');
-        const h2 = document.createElement('h2');
-        h2.innerText = country.name.common;
-        div.appendChild(h2);
-        const p = document.createElement('p');
-        p.innerText = `Capital: ${country.capital} Area: ${country.area} Population: ${country.population}`
-        div.appendChild(p);
+        div.innerHTML = `
+            <h2> ${country.name.common} </h2>
+            <p> ${country.capital} Area: ${country.area} Population: ${country.population}</p>
+        `
         countriesDiv.appendChild(div);
-
     })
 }
+
